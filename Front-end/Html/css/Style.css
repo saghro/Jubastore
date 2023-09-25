@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0px;
-    right: 400px;
+    right: 40px;
     z-index: 999;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .menu-items li {
-    margin-right: 20px; 
+    margin-right: 60px; 
 }
 
 .menu-items li:last-child {
@@ -45,4 +45,30 @@
     color: #070707;
     font-weight: 600; 
 }
+
+.cart-login-container {
+    display: flex;
+    align-items: center;
+}
+
+.fa-bag-shopping {
+    font-size: 24px; 
+    margin-right: 10px; 
+    color: #222222; 
+}
+
+input[type="button"] {
+    background-color: #5E92FA; 
+    color: #fff;
+    border: none; 
+    padding: 10px 30px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
 
