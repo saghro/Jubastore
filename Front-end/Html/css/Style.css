@@ -82,16 +82,17 @@ input[type="button"]:hover {
 }
 /* Créez une classe CSS pour l'élément SVG */
 .mon-svg {
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255, 186, 197, 0.4); /* Couleur avec transparence */
-     /* Pour obtenir une forme circulaire comme le viewBox du SVG */
+    width: 600px;
+  height: 500px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  background-color: rgba(176, 178, 180, 0.4);
+  border-radius: 60% 20% 45% 20%;
   }
   
 .image {
     flex: 1;
     margin: 0 20px 20px 0;
     margin-top: 120px;
+
    
 }
 
