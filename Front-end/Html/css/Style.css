@@ -98,7 +98,7 @@ input[type="button"]:hover {
 .mon-svg {
   width: 600px;
   height: 500px; 
-  background-color: rgba(176, 178, 180, 0.4);
+  background-color: rgba(0, 128, 255, 0.4);
   border-radius: 66% 20% 55% 15%;
   margin-right: -50px;
   }
@@ -209,3 +209,48 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Style pour la div contenant les produits */
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Style pour chaque produit */
+  .produit {
+    width: calc(33.33% - 20px); /* Pour créer une disposition en grille à 3 colonnes */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style pour l'image du produit */
+  .produit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le nom du produit */
+  .produit h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour la description du produit */
+  .produit p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le prix du produit */
+  .produit p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e47911; /* Couleur d'accent similaire à Amazon */
+  }
+  
