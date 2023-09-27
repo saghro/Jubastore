@@ -98,7 +98,7 @@ input[type="button"]:hover {
 .mon-svg {
   width: 600px;
   height: 500px; 
-  background-color: rgba(0, 128, 255, 0.4);
+  background-color:  #007bff;
   border-radius: 66% 20% 55% 15%;
   margin-right: -50px;
   }
@@ -213,7 +213,7 @@ p {
 #data {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
     gap: 20px;
     padding: 20px;
   }
@@ -226,6 +226,7 @@ p {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    animation: wordAnimation 2s ease forwards;
   }
   
   /* Style pour l'image du produit */
@@ -253,4 +254,3 @@ p {
     font-weight: bold;
     color: #e47911; /* Couleur d'accent similaire à Amazon */
   }
-  
