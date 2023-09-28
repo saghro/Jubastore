@@ -5,14 +5,21 @@ const jsonData = {
         description: "Ceci est la description du produit 1.",
         notation: 4.5,
         prix: 29.99,
-        image: "../Images/ch1.png",
+        image: "../Images/ch7.png",
       },
       {
         nom: "Produit 2",
         description: "Ceci est la description du produit 2.",
         notation: 4.0,
         prix: 19.99,
-        image: "chemin/vers/image2.jpg",
+        image: "../Images/ch2.png",
+      },
+      {
+        nom: "Produit 3",
+        description: "Ceci est la description du produit 2.",
+        notation: 4.0,
+        prix: 19.99,
+        image: "../Images/ch3.png",
       },
       // Ajoutez d'autres produits ici...
     ],
