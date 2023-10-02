@@ -32,7 +32,7 @@
     position: fixed;
     top: 0;
     left: 0px;
-    right: 40px;
+    right: 0px;
     z-index: 999;
 }
 
@@ -58,7 +58,20 @@
     color: #070707;
     font-weight: 600; 
 }
+.navbar {
+    animation: fadeInDown 1s ease;
+}
 
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .cart-login-container {
     display: flex;
     align-items: center;

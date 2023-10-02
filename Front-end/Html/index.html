@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="./css/Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
@@ -54,7 +55,43 @@
         </div>
         <input type="button" value="EXPLORE NOW" id="btn">
     </div>
-    
+    <div class="carousel">
+      <div class="carousel_inner">
+         <div class="carousel_item carousel_item__active">
+            <img src="../Images/JUBASTRORE (2).png" alt="" class="carousel_img">
+            <div class="carousel_caption">
+               <h1 class="carousel_title">Change It As You See Fit</h1>
+               <p class="carousel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
+                  corporis laudantium quae velit quam.</p>
+            </div>
+         </div>
+        
+         <div class="carousel_item">
+            <img src="../Images/JUBASTRORE (1).png" alt="" class="carousel_img">
+         </div>
+         <div class="carousel_item">
+            <img src="about2.png" alt="" class="carousel_img">
+         </div>
+         
+      </div>
+
+      <div class="carousel_indicator">
+         <button class="carousel_dot carousel_dot__active"></button>
+         <button class="carousel_dot"></button>
+         <button class="carousel_dot"></button>
+      </div>
+
+      <div class="carousel_control">
+         <button class="carousel_button carousel_button__prev">
+            <i class="fas fa-chevron-left"></i>
+         </button>
+         <button class="carousel_button carousel_button__next">
+            <i class="fas fa-chevron-right"></i>
+         </button>
+      </div>
+   </div>
+
+   
     <div id="shop">
          <h2>Nos produits</h2>
          <p>Get in on the trend with our curated selection of best-selling styles.</p>
@@ -63,7 +100,7 @@
         
     </div>
     <script src="../js/main.js"></script>
-   
+    <script src="../js/about.js"></script>
 </body>
 
 </html>
