@@ -215,54 +215,83 @@ p {
 }
 
 /* Style pour la div contenant les produits */
+/* Style for the container of products */
 #data {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
-  }
-  
-  /* Style pour chaque produit */
-  .produit {
-    width: calc(33.33% - 20px); /* Pour créer une disposition en grille à 3 colonnes */
+    padding: 10px;
+}
+
+/* Style for each product */
+.produit {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: wordAnimation 2s ease forwards;
-  }
-  
-  
-  .produit img {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease; /* Adding a transform transition */
+}
+
+.produit img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
-  }
-  
-  /* Style pour le nom du produit */
-  .produit h2 {
+    margin-bottom: 20px;
+}
+
+.produit h2 {
     font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style pour la description du produit */
-  .produit p {
+    margin-top: -10px;
+}
+
+/* Style for the description of the product */
+.produit p {
     font-size: 14px;
     margin-bottom: 10px;
-  }
- 
-  /* Style pour le prix du produit */
-  .produit p:last-child {
+}
+
+/* Style for the price of the product */
+.produit p:last-child {
     font-size: 16px;
     font-weight: bold;
-    color: #e47911; /* Couleur d'accent similaire à Amazon */
-  }
-  .ajouter-au-panier {
-    color: royalblue; /* Couleur de l'icône */
-    font-size: 24px; /* Taille de l'icône */
+    color: #e47911; /* Accent color similar to Amazon */
+}
+
+.ajouter-au-panier {
+    background-color: #5E92FA;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 15px;
     cursor: pointer;
-    margin-top: 10px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -30px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Add a hover effect to the product */
+.produit:hover {
+    transform: scale(1.05); /* Increase the size of the product on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+/* Apply the word animation to the product on hover */
+.produit:hover .wordAnimation {
+    animation: wordAnimation 1s ease forwards;
+}
+
+/* Style for the word animation within the product */
+.produit .wordAnimation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: wordAnimation 2s ease forwards;
+}
+
 }
 
   .form-row {
@@ -375,4 +404,28 @@ p {
     color: #fff;
     cursor: pointer;
   }
-     
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #5E92FA;
+}
+ 
