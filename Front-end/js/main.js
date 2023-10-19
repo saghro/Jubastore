@@ -107,6 +107,7 @@ jsonData.produits.forEach((produit) => {
 
     const prixElement = document.createElement("p");
     prixElement.textContent = "Prix : $" + produit.prix;
+     prixElement.classList.add("prix");
 
     const boutonAjouter = document.createElement("button");
     boutonAjouter.textContent = "Ajouter au panier";
