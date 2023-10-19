@@ -258,31 +258,31 @@ p {
 .produit p:last-child {
     font-size: 16px;
     font-weight: bold;
-    color: #e47911; /* Accent color similar to Amazon */
+    color: #000000; /* Accent color similar to Amazon */
 }
 
 .ajouter-au-panier {
     background-color: #5E92FA;
     color: #fff;
     border: none;
-    padding: 12px 15px;
-    border-radius: 15px;
+    padding: 6px 30px; /* Correction : il y avait une faute de frappe dans la valeur du padding */
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    position: absolute;
-    margin-top: -30px;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10px; /* Réglage de la marge supérieure */
+    margin-left: auto; /* Ajustement de la marge gauche */
+    margin-right: auto; /* Ajustement de la marge droite */
+    display: block; /* Pour centrer le bouton */
 }
 
-/* Add a hover effect to the product */
+
+
 .produit:hover {
-    transform: scale(1.05); /* Increase the size of the product on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 
-/* Apply the word animation to the product on hover */
+
 .produit:hover .wordAnimation {
     animation: wordAnimation 1s ease forwards;
 }
@@ -294,7 +294,6 @@ p {
     animation: wordAnimation 2s ease forwards;
 }
 
-}
 
   .form-row {
     margin-bottom: 10px;
@@ -574,7 +573,4 @@ p {
 		margin-left: 0;
 	}
 
-}
-h1{
-    
 }
