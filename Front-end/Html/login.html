@@ -53,7 +53,8 @@
                         <span>Password</span>
                         <input type="password" />
                     </label>
-                    <button type="button" class="submit">Sign Up</button>
+                    <button type="button" class="submit" id="signup-button">Sign Up</button>
+
                     
                 </div>
             </div>
@@ -62,6 +63,12 @@
         <script>
             document.querySelector('.img__btn').addEventListener('click', function() {
                 document.querySelector('.cont').classList.toggle('s--signup');
+                document.getElementById('signup-button').addEventListener('click', function() {
+        // Vous pouvez effectuer ici des actions telles que la création du compte dans une base de données
+        // Après avoir effectué les actions nécessaires, redirigez l'utilisateur vers la page d'accueil
+        window.location.href = "index.html"; // Remplacez "index.html" par l'URL de votre page d'accueil
+    });
             });
+
         </script></body>
 </html>

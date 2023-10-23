@@ -87,7 +87,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    background-color: #0056b3;
 }
 
 
@@ -100,7 +100,7 @@ input[type="button"]:hover {
 
 }
 
-/* Créez une classe CSS pour l'élément SVG */
+
 .mon-svg {
   width: 600px;
   height: 500px; 
@@ -146,7 +146,7 @@ input[type="button"]:hover {
     bottom: -80px;
 }
 #btn[type="button"]:hover {
-    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    background-color: #0056b3;
 }
 @keyframes wordAnimation {
     0% {
@@ -216,8 +216,7 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Style pour la div contenant les produits */
-/* Style for the container of products */
+
 #data {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -225,7 +224,7 @@ p {
     padding: 10px;
 }
 
-/* Style for each product */
+
 .produit {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -234,7 +233,7 @@ p {
     animation: wordAnimation 2s ease forwards;
     position: relative;
     overflow: hidden;
-    transition: transform 0.2s ease; /* Adding a transform transition */
+    transition: transform 0.2s ease;
 }
 
 .produit img {
@@ -248,31 +247,30 @@ p {
     margin-top: -10px;
 }
 
-/* Style for the description of the product */
+
 .produit p {
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-/* Style for the price of the product */
 .produit p:last-child {
     font-size: 16px;
     font-weight: bold;
-    color: #000000; /* Accent color similar to Amazon */
+    color: #000000; 
 }
 
 .ajouter-au-panier {
     background-color: #5E92FA;
     color: #fff;
     border: none;
-    padding: 6px 30px; /* Correction : il y avait une faute de frappe dans la valeur du padding */
+    padding: 6px 30px; 
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px; /* Réglage de la marge supérieure */
-    margin-left: auto; /* Ajustement de la marge gauche */
-    margin-right: auto; /* Ajustement de la marge droite */
-    display: block; /* Pour centrer le bouton */
+    margin-top: 10px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
 }
 
 
@@ -287,7 +285,7 @@ p {
     animation: wordAnimation 1s ease forwards;
 }
 
-/* Style for the word animation within the product */
+
 .produit .wordAnimation {
     opacity: 0;
     transform: translateY(20px);
@@ -410,13 +408,12 @@ p {
 	vertical-align: top;
 }
 
-/* Footer left */
+
 
 .footer-distributed .footer-left{
 	width: 40%;
 }
 
-/* The company logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
@@ -428,7 +425,7 @@ p {
 	color:  lightseagreen;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
@@ -451,7 +448,6 @@ p {
 	margin: 0;
 }
 
-/* Footer Center */
 
 .footer-distributed .footer-center{
 	width: 35%;
@@ -509,7 +505,6 @@ p {
   content: none;
 }
 
-/* Footer Right */
 
 .footer-distributed .footer-right{
 	width: 20%;
@@ -552,7 +547,6 @@ p {
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
