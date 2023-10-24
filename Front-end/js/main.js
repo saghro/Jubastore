@@ -77,7 +77,13 @@ const jsonData = {
       prix: 19.99,
       image: "../Images/ch2.png",
     },
- 
+    {
+      nom: "Produit 3",
+      description: "Ceci est la description du produit 2.",
+      notation: 4.0,
+      prix: 19.99,
+      image: "../Images/ch3.png",
+    },
     // Ajoutez d'autres produits ici...
   ],
 };
