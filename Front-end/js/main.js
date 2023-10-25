@@ -125,5 +125,4 @@ jsonData.produits.forEach((produit) => {
     produitDiv.appendChild(prixElement);
     produitDiv.appendChild(boutonAjouter);
 
-    dataDiv.appendChild(produitDiv);
 });
