@@ -77,13 +77,7 @@ const jsonData = {
       prix: 19.99,
       image: "../Images/ch2.png",
     },
-    {
-      nom: "Produit 3",
-      description: "Ceci est la description du produit 2.",
-      notation: 4.0,
-      prix: 19.99,
-      image: "../Images/ch3.png",
-    },
+   
     // Ajoutez d'autres produits ici...
   ],
 };
@@ -114,7 +108,8 @@ jsonData.produits.forEach((produit) => {
     boutonAjouter.classList.add("ajouter-au-panier");
 
     boutonAjouter.addEventListener("click", () => {
-       
+        // Ajoutez ici la logique pour ajouter le produit au panier
+        // Vous pouvez stocker les produits dans un tableau ou une autre structure de données
         console.log("Produit ajouté au panier : " + produit.nom);
     });
 
